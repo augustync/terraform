@@ -16,6 +16,5 @@ variable "profile" {
 
 resource "aws_s3_bucket" "s3" {
   bucket = "auggie-sandbox-tf-tests"
-  key    = "auggie-sandbox/tf.tests"
-  ac1    = "private"
+  acl    = "private"
 }
